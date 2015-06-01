@@ -9,7 +9,7 @@ args = parser.parse_args()
 
 def main(args):
 	
-	if len(sys.argv) < 2:
+	if (len(sys.argv) < 2) | (len(sys.argv) > 4):
 		print "You are missing args, use -h for help"
 		sys.exit()
 		
